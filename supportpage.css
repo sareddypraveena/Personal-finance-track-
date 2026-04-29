@@ -1,0 +1,214 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Header / Navbar */
+header {
+  background-color: #1e293b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navigation a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+/* Consistent Login/Signup Buttons across all pages */
+
+.navigation .btnLogin-popup:first-of-type {
+  width: 120px;
+  height: 40px;
+  background-color: #64748b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-left: 10px;
+  transition: none;
+}
+
+/* Signup button (blue) */
+.navigation .btnLogi-popup:last-of-type {
+  width: 120px;
+  height: 40px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-left: 10px;
+  transition: none;
+}
+
+/* no hover if you want it static:
+.navigation .btnLogin-popup:last-of-type:hover {
+  background-color: #1e40af;
+}
+*/
+
+/* Support form container */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  min-height: calc(100vh - 80px);
+}
+
+/* Form styling */
+.form-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.form-box h3 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #000;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  background-color: #f9fafb;
+  outline: none;
+}
+
+.input-box input:focus {
+  border-color: #2563eb;
+}
+
+.query label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #000;
+}
+
+.query textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  background-color: #f9fafb;
+  min-height: 120px;
+  resize: vertical;
+}
+
+.query textarea:focus {
+  border-color: #2563eb;
+}
+
+/* Submit button in form */
+.btn {
+  background-color: #2563eb;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Close icon */
+.icon-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media(max-width: 600px){
+  header{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navigation a, .navigation .btnLogin-popup {
+    margin: 5px 0;
+  }
+  .footer ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

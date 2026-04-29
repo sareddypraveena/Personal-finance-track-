@@ -1,0 +1,91 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1e293b;
+  color: white;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn.primary {
+  background-color: #2563eb;
+  color: white;
+  
+}
+
+.btn.secondary {
+  background-color: #64748b;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Hero section */
+.hero {
+  background: url("https://images.unsplash.com/photo-1605902711622-cfb43c4437d4") center/cover no-repeat;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  max-width: 600px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.hero-content .btn {
+  font-size: 1rem;
+}

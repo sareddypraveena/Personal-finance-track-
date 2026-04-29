@@ -1,0 +1,160 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1e293b;
+  color: white;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn.primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn.secondary {
+  background-color: #64748b;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Auth Form */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px);
+  background: url("https://images.unsplash.com/photo-1605902711622-cfb43c4437d4")
+    center/cover no-repeat;
+}
+
+.auth-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.auth-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2563eb;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-icon {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: white;
+}
+
+.input-icon ion-icon {
+  color: #2563eb;
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.input-icon input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 8px;
+}
+
+.form-group.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+}
+
+.form-group.checkbox input {
+  accent-color: #2563eb;
+}
+
+.switch-auth {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.switch-auth a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.switch-auth a:hover {
+  text-decoration: underline;
+}
+
+/* Auth button */
+.btn.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn.auth-btn:hover {
+  background-color: #1d4ed8;
+}

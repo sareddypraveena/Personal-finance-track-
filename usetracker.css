@@ -1,0 +1,267 @@
+/* usetracker.css */
+
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Header like your screenshot */
+header {
+  background-color: #1c2734;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+header .logo {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+header .navigation a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header .navigation a:hover {
+  color: #4ea1f7;
+}
+
+/* login button (gray) */
+header .navigation .btnLogin-popup:nth-of-type(1) {
+  background-color: #64748b;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+header .navigation .btnLogin-popup:nth-of-type(1):hover {
+  background-color: #475569;
+}
+
+/* sign-up button (blue) */
+header .navigation .btnLogin-popup:nth-of-type(2) {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+header .navigation .btnLogin-popup:nth-of-type(2):hover {
+  background-color: #1e4db7;
+}
+
+
+/* Main section styling */
+.main-content {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.head-text h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1c2734;
+}
+
+.under-head-text {
+  width: 80px;
+  height: 3px;
+  background-color: #4ea1f7;
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+/* tracker card */
+.tracker-part {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+/* balance */
+.tracker-balance {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.current-balance {
+  font-weight: bold;
+}
+
+/* filters */
+.currency-filter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.currency-filter label {
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.currency-filter select,
+.currency-filter input[type="date"] {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* transaction form */
+.transaction-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.transaction-form input,
+.transaction-form select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1 1 200px;
+}
+
+.transaction-form button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transaction-form button:first-of-type {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.transaction-form button:first-of-type:hover {
+  background-color: #1e4db7;
+}
+
+.transaction-form button:last-of-type {
+  background-color: #64748b;
+  color: #ffffff;
+}
+
+.transaction-form button:last-of-type:hover {
+  background-color: #475569;
+}
+
+/* table */
+.table-part table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-part th,
+.table-part td {
+  padding: 12px 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table-part th {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.table-part tr:nth-child(even) {
+  background-color: #f9fbfd;
+}
+
+.table-part tr:hover {
+  background-color: #eef5fc;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .currency-filter {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .transaction-form {
+    flex-direction: column;
+  }
+}
+/* Header consistent with homepage */
+header {
+  background-color: #1c2734;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+header .logo {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+header .navigation a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header .navigation a:hover {
+  color: #4ea1f7;
+}
+
+header .navigation .btnLogin-popup {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  margin-left: 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* login button (gray) */
+header .navigation .btnLogin-popup:nth-of-type(1) {
+  background-color: #64748b;
+  color: #ffffff;
+}
+
+header .navigation .btnLogin-popup:nth-of-type(1):hover {
+  background-color: #475569;
+}
+
+/* sign-up button (blue) */
+header .navigation .btnLogin-popup:nth-of-type(2) {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+header .navigation .btnLogin-popup:nth-of-type(2):hover {
+  background-color: #1e4db7;
+}

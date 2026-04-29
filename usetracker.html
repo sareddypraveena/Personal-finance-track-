@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="usetracker.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1 class="logo">Finance Tracker</h1>
+        <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="usetracker.html">Use Tracker</a>
+        <a href="work.html">How it Works</a>
+        <a href="supportpage.html">Support</a>
+        <a href="loginfinance.html" target="_self"><button class="btnLogin-popup">Login</button></a>
+        <a href="signup.html" target="_self"><button class="btnLogin-popup">sign-up</button></a>
+        </nav>
+    </header>
+    
+    <section class="main-content" id="tracker">
+        <div class="head-text">
+          <h1>Access Your Personal Finance Tracker</h1>
+          <div class="under-head-text"></div>
+        </div>
+        <br />
+        <div class="tracker-part">
+          <div class="tracker-balance">
+            Current Balance: <span id="balance" class="current-balance"></span>
+          </div>
+  
+          <div class="currency-filter">
+            <div class="filter-left">
+              <label for="currency">Select Currency:</label>
+              <select id="currency" onchange="updateBalance()">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="INR" selected>INR</option>
+              </select>
+            </div>
+            <div class="filter-right">
+              <label for="text" class="date-box">Choose Date:</label>
+              <input type="date" id="date" placeholder="Date" />
+            </div>
+          </div>
+  
+          <div class="transaction-form">
+            <input type="text" id="description" placeholder="Description" />
+            <input type="number" id="amount" placeholder="Amount" />
+            <select id="type">
+              <option value="income">Income</option>
+              <option value="expense">Expense</option>
+            </select>
+            <button onclick="addTransaction()">Add Transaction</button>
+            <button onclick="handleDownload()">Export</button>
+          </div>
+          <div class="table-part" id="table-part">
+            <table id="transaction-table">
+              <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Type</th>
+                <th>Action</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <script>
+        feather.replace();
+      </script>
+      <script src="script.js"></script>
+</body>
+</html>

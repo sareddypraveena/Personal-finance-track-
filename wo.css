@@ -1,0 +1,164 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Header / Navbar */
+header {
+  background-color: #1e293b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navigation a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Login button */
+.navigation .btnLogin-popup:first-of-type {
+  width: 120px;
+  height: 40px;
+  background-color: #64748b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+/* Signup button */
+.navigation .btnLogi-popup:last-of-type {
+  width: 120px;
+  height: 40px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.navigation .btnLogin-popup:last-of-type {
+  width: 120px;
+  height: 40px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-left: 10px;
+}
+/* How it Works Section */
+.how-it-works {
+  padding: 100px 20px;
+  background-color: #f1f5f9;
+}
+
+.head-text h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+.under-head-text {
+  height: 4px;
+  width: 60px;
+  background-color: #2563eb;
+  margin: 0 auto 30px;
+  border-radius: 3px;
+}
+
+.working-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-working {
+  max-width: 600px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.working-head {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1e293b;
+}
+
+.text-lightBlue {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.ul-items {
+  list-style: none;
+  padding: 0;
+}
+
+.check-list-items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.check-list-items ion-icon {
+  color: #22c55e;
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.sign-up-button-btn {
+  margin-top: 20px;
+  width: 100%;
+  height: 45px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .working-content {
+    flex-direction: column;
+  }
+}
